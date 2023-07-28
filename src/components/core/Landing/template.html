@@ -8,19 +8,10 @@
         >
           <v-card flat dark color="transparent">
             <v-card-title class="display-1 text-center pv-break-word">
-              Visualize your data with Kitware Glance
+              VizualSimuLab open file 
             </v-card-title>
             <v-card-text>
-              A general purpose standalone web application by
-              <a
-                target="_blank"
-                class="indigo--text text--lighten-3"
-                href="https://www.kitware.com/"
-                rel="noopener noreferrer"
-              >Kitware, Inc.</a>
-              that can be used to visualize many data types.
-              It is also a great framework for building custom
-              viewers on the web which can involve remote services.
+              A remote web aplication that allows visualization of cardiovascular surgery Fontan fluid dynamics simulations.
             </v-card-text>
           </v-card>
         </v-flex>
@@ -64,7 +55,7 @@
   <v-container class="mt-4 pv-no-select" grid-list-lg>
     <v-layout row wrap>
       <v-flex xs12>
-        <span class="title">Sample Data</span>
+        <span class="title">Simulated Cases</span>
       </v-flex>
       <v-flex
         v-for="(sample, i) in samples"
@@ -95,8 +86,8 @@
   </v-container>
   <v-footer class="d-flex flex-column" height="48px" color="transparent">
     <div class="mb-2 text-center grey--text text--darken-2">
-      <div>&copy; {{ new Date().getFullYear() }} — Kitware, Inc.</div>
-      <div>Glance ({{version}})</div>
+      <div>&copy; {{ new Date().getFullYear() }} — M.Fermin.</div>
+      <div>VizualSimuLab ({{version}})</div>
     </div>
   </v-footer>
 </div>

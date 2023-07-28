@@ -13,11 +13,11 @@ export default {
     };
   },
   created() {
-    if (window.GLANCE_VERSION) {
-      if (window.GLANCE_VERSION === 'master') {
-        this.version = 'nightly (master)';
+    if (window.VSL_VERSION) {
+      if (window.VSL_VERSION === 'main') {
+        this.version = 'nightly-master (main)';
       } else {
-        this.version = window.GLANCE_VERSION;
+        this.version = window.VSL_VERSION;
       }
     }
   },

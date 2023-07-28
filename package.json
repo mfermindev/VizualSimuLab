@@ -16,14 +16,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kitware/glance.git"
+    "url": "git@github.com:mfermindev/VizualSimuLab.git"
   },
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/kitware/glance/issues"
+    "url": "https://github.com"
   },
-  "homepage": "https://github.com/kitware/glance",
+  "homepage": "https://mfermindev.github.io/VizualSimuLab",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "validate": "prettier --config ./prettier.config.js --list-different \"src/**/*.js\"",
     "reformat": "prettier --config ./prettier.config.js --write \"src/**/*.js\"",
     "doc": "kw-doc -c ./documentation/config.js",
@@ -39,21 +41,23 @@
     "prepublishOnly": "npm run version && npm run bundle",
     "postinstall": "patch-package"
   },
-  "author": "Kitware",
+  "author": "mfermin",
   "dependencies": {
-    "@girder/components": "3.1.0",
-    "@kitware/vtk.js": "25.6.0",
+    "@girder/components": "^3.2.0",
+    "@kitware/vtk.js": "^25.6.0",
     "@linusborg/vue-simple-portal": "0.1.5",
+    "caniuse-lite": "^1.0.30001451",
     "itk": "14.1.1",
-    "jszip": "3.7.1",
+    "jszip": "^3.10.1",
     "mousetrap": "1.6.5",
     "patch-package": "^6.4.7",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
+    "react": "^18.2.0",
     "typeface-roboto": "1.1.13",
     "vue": "2.6.14",
     "vue-cli-plugin-vuetify": "2.4.3",
-    "vuetify": "2.6.9",
+    "vuetify": "^2.6.14",
     "vuex": "3.6.2",
     "webworker-promise": "0.4.4",
     "workbox-sw": "6.3.0"
@@ -72,6 +76,7 @@
     "copy-webpack-plugin": "9.0.1",
     "css-loader": "6.3.0",
     "deep-merge": "1.0.0",
+    "deploy-to-git": "^0.4.1",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.3.0",
@@ -81,8 +86,9 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-vue": "7.19.1",
     "expose-loader": "3.0.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "5.3.2",
-    "inline-source-cli": "2.0.0",
+    "inline-source-cli": "^1.2.0",
     "kw-doc": "3.1.2",
     "mini-css-extract-plugin": "2.4.1",
     "postcss-loader": "6.1.1",
@@ -90,7 +96,7 @@
     "prettier": "2.4.1",
     "sass": "~1.32",
     "sass-loader": "12.1.0",
-    "semantic-release": "18.0.0",
+    "semantic-release": "^20.1.0",
     "style-loader": "3.3.0",
     "terser-webpack-plugin": "5.2.4",
     "vue-loader": "15.9.8",
@@ -99,9 +105,9 @@
     "vuetify-loader": "1.7.3",
     "webpack": "5.57.1",
     "webpack-cli": "4.8.0",
-    "webpack-dev-server": "4.3.1",
+    "webpack-dev-server": "^4.11.1",
     "webpack-merge": "5.8.0",
-    "workbox-webpack-plugin": "6.3.0",
+    "workbox-webpack-plugin": "^6.5.4",
     "worker-loader": "3.0.8",
     "write-file-webpack-plugin": "4.5.1"
   },

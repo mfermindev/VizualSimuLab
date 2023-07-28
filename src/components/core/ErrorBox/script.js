@@ -39,7 +39,7 @@ export default {
   },
   computed: {
     readableErrors() {
-      const version = window.GLANCE_VERSION || 'not available';
+      const version = window.VSL_VERSION || 'not available';
       const errorStrings = this.errors
         .map((err) => {
           if (err instanceof ErrorEvent) {

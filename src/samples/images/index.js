@@ -1,23 +1,17 @@
-import Aneurism from './aneurism.jpg';
-import CAD from './cad.jpg';
-import Engine from './engine.jpg';
-import F1 from './F1.jpg';
-// import Head from './head.jpg';
-import Lidar from './Lidar.jpg';
-import Lysozyme from './lysozyme.jpg';
-import SinglePin from './singlepin.jpg';
-import Tooth from './tooth.jpg';
-import Covid19 from './covid19.jpg';
+import caso07 from './caso07.png';
+import caso08 from './caso08.png';
+import caso08b from './caso08b.png';
+import caso09 from './caso09.png';
+import caso03 from './caso03.png';
+import caso02pre from './caso02pre.png';
+import caso02pos from './caso02pos.png';
 
 export default {
-  Aneurism,
-  CAD,
-  Engine,
-  F1,
-  // Head,
-  Lidar,
-  Lysozyme,
-  SinglePin,
-  Tooth,
-  Covid19,
+  caso02pre,
+  caso02pos,
+  caso03,
+  caso07,
+  caso08,
+  caso08b,
+  caso09,
 };

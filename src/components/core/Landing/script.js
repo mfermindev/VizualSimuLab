@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       samples,
-      version: window.GLANCE_VERSION || 'no version available',
+      version: window.VSL_VERSION || 'version testing',
     };
   },
   methods: {

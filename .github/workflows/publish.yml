@@ -30,12 +30,12 @@ jobs:
 
       - name: Set git config
         run: |
-          git config --global user.name "Github Actions"
-          git config --global user.email "forrest.li@kitware.com"
+          git config --global user.name "mfermindev"
+          git config --global user.email "af_mauro7@hotmail.com"
 
       - name: Publish website
         env:
-          GIT_PUBLISH_URL: https://${{ secrets.GH_PUBLISH_CREDS }}@github.com/Kitware/glance.git
+          GIT_PUBLISH_URL: https://${{ secrets.GH_PUBLISH_CREDS }}git@github.com:mfermindev/VizualSimuLab.git
         run: npm run doc:publish
 
       - name: Release

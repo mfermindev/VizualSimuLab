@@ -1,172 +1,101 @@
 import Images from 'paraview-glance/src/samples/images';
 
 const version =
-  window.GLANCE_VERSION && window.GLANCE_VERSION !== 'master'
-    ? window.GLANCE_VERSION
-    : 'master';
+  window.VSL_VERSION && window.VSL_VERSION !== 'main'
+    ? window.VSL_VERSION
+    : 'main';
 
 // prettier-ignore
 export default [
   {
-    label: 'COVID-19',
-    image: Images.Covid19,
-    size: '8.4 MB',
-    description: 'Lung CT Scan of a COVID-19 patient exhibiting ground-glass opacities (GGO)',
-    acknowledgement: 'Joseph Paul Cohen and Paul Morrison and Lan Dao, "COVID-19 image data collection", arXiv:2003.11597, 2020',
-    datasets: [
-      {
-        name: 'covid19.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/covid19.glance`,
-      },
-    ],
-  },
-  {
-    label: '202-t + Edges',
-    image: Images.CAD,
-    size: '112 KB',
-    description: 'T-Handle, Flanged Base, Solid Bar',
-    acknowledgement: 'https://www.traceparts.com/',
-    datasets: [
-      {
-        name: '202-t.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/202-t.glance`,
-      },
-    ],
-  },
-  {
-    label: 'Lysozyme.pdb',
-    image: Images.Lysozyme,
-    size: '135 KB',
-    description: 'an enzyme that catalyzes the destruction of the cell walls of certain bacteria, occurring notably in tears and egg white.',
-    datasets: [
-      {
-        name: 'Lysozyme.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/lysozyme.glance`,
-      },
-    ],
-  },
-  {
-    label: 'Tooth.nrrd',
-    image: Images.Tooth,
-    size: '1.6 MB',
-    datasets: [
-      {
-        name: 'Tooth.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/Tooth.glance`,
-      },
-    ],
-  },
-  {
-    label: 'Engine',
-    image: Images.Engine,
-    size: '3.1 MB',
-    datasets: [
-      {
-        name: 'Engine.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/Engine.glance`,
-      },
-    ],
-    acknowledgement: 'General Electric',
-    description: 'CT scan of two cylinders of an engine block.',
-  },
-  {
-    label: 'lidar.vtp',
-    image: Images.Lidar,
+    label: 'Case a736566-run@10seg',
+    image: Images.caso03,
     size: '5.3 MB',
-    description: 'Aerial LIDAR data',
+    description: 'glenn:0.7[L/m], vci:1.13[L/m], Qs: 1.85%',
+    acknowledgement: 'case a736566',
     datasets: [
       {
-        name: 'lidar.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/lidar.glance`,
+        name: 'caso-A736566.glance',
+        url: `https://raw.githubusercontent.com/maurferdev/dataset_res/${version}/caso-A736566.glance`,
       },
     ],
   },
   {
-    label: 'SinglePin.vtp',
-    image: Images.SinglePin,
-    size: '8.2 MB',
-    description: 'Mixing Vane inside reactor pin for cooling',
-    acknowledgement: "Simulation data from Hydra-TH",
+    label: 'Case a815746-run1@10seg',
+    image: Images.caso08,
+    size: '14.7 MB',
+    description: 'bi-glenn  lglenn:1.4[L/m], rglenn:1.0[L/m], vci:2.2[L/m]',
+    acknowledgement: 'case a815746',
     datasets: [
       {
-        name: 'SinglePin.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/SinglePin.glance`,
+        name: 'caso08.glance',
+        url: `https://raw.githubusercontent.com/maurferdev/dataset_res/${version}/caso08.glance`,
+      },
+    ],
+  },
+    {
+    label: 'Case a815746-run2@2seg',
+    image: Images.caso08b,
+    size: '14.7 MB',
+    description: 'bi-glenn  lglenn:1.0[L/m], rglenn:1.0[L/m], vci:2.2[L/m]',
+    acknowledgement: 'case a815746',
+    datasets: [
+      {
+        name: 'caso08b.glance',
+        url: `https://raw.githubusercontent.com/maurferdev/dataset_res/${version}/caso08b.glance`,
       },
     ],
   },
   {
-    label: 'Formula 1',
-    image: Images.F1,
-    size: '6.7 MB',
+    label: 'Case a844152',
+    image: Images.caso07,
+    size: '8.4 MB',
+    description: 'preplanning simulation Extracardiac Tube - Fontan step. CFD. Tricuspid atresia 12 years old patient',
+    acknowledgement: 'case a844152',
     datasets: [
       {
-        name: 'F1.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/F1.glance`,
+        name: 'caso.glance',
+        url: `https://raw.githubusercontent.com/maurferdev/dataset_res/${version}/caso.glance`,
       },
     ],
   },
-  // {
-  //   label: 'Head.mha',
-  //   image: Images.Head,
-  //   size: '6.2 MB',
-  //   datasets: [
-  //     {
-  //       name: 'head.glance',
-  //       url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/head.glance`,
-  //     },
-  //   ],
-  // },
   {
-    label: 'Aneurysm.vti',
-    image: Images.Aneurism,
-    size: '348 KB',
+    label: 'Case a4871883',
+    image: Images.caso09,
+    size: '7.3 MB',
+    description: 'Tricuspid atresia 2.5 years old',
+    acknowledgement: 'case a4871883',
     datasets: [
       {
-        name: 'Aneurism.glance',
-        url: `https://raw.githubusercontent.com/Kitware/paraview-glance/${version}/data/Aneurism.glance`,
+        name: 'caso.glance',
+        url: `https://raw.githubusercontent.com/maurferdev/dataset_res/${version}/caso-A4871883.glance`,
       },
     ],
-    acknowledgement: 'Philips Research, Hamburg, Germany',
-    description: 'Rotational C-arm x-ray scan of the arteries of the right half of a human head. A contrast agent was injected into the blood and an aneurism is present.',
   },
-  // {
-  //   label: 'Backpack.vti',
-  //   image: Images.Backpack,
-  //   size: '8.3 MB',
-  //   description: "CT scan of a backpack filled with items.",
-  //   acknowledgement: "Kevin Kreeger, Viatronix Inc., USA",
-  //   datasets: [
-  //     {
-  //       name: 'Backpack.vti',
-  //       url: 'https://kitware.github.io/vtk-js-datasets/data/vti/backpack.vti',
-  //     },
-  //   ],
-  // },
-  // {
-  //   label: 'Head MRI CISS',
-  //   image: Images.Head,
-  //   size: '5.1 MB',
-  //   datasets: [
-  //     {
-  //       name: 'Head.vti',
-  //       url: 'https://kitware.github.io/vtk-js-datasets/data/vti/mri_ventricles.vti',
-  //     },
-  //   ],
-  //   acknowledgement: 'Dirk Bartz, VCM, University of Tübingen, Germany',
-  //   description: '1.5T MRT 3D CISS dataset of a human head that highlights the CSF (Cerebro-Spinal-Fluid) filled cavities of the head.',
-  // },
-  // {
-  //   label: 'Foot',
-  //   image: Images.Foot,
-  //   url: 'https://kitware.github.io/vtk-js-datasets/data/vti/foot.vti',
-  //   size: '4.3 MB',
-  //   datasets: [
-  //     {
-  //       name: 'Foot.vti',
-  //       url: 'https://kitware.github.io/vtk-js-datasets/data/vti/foot.vti',
-  //     },
-  //   ],
-  //   acknowledgement: 'Philips Research, Hamburg, Germany',
-  //   description: 'Rotational C-arm x-ray scan of a human foot. Tissue and bone are present in the dataset.',
-  // },
+   {
+    label: 'Case ea904f-pre',
+    image: Images.caso02pre,
+    size: '4.9 MB',
+    description: 'Redireccionamiento de Tubo Extracardíaco - prequirúrgico',
+    acknowledgement: 'case ea904f-pre',
+    datasets: [
+      {
+        name: 'caso.glance',
+        url: `https://raw.githubusercontent.com/maurferdev/dataset_res/${version}/EA904F-pre.glance`,
+      },
+    ],
+  },
+  {
+    label: 'Case ea904f-pos',
+    image: Images.caso02pos,
+    size: '7.4 MB',
+    description: 'Redireccionamiento de Tubo Extracardíaco - postquirúrgico',
+    acknowledgement: 'case ea904f-pos',
+    datasets: [
+      {
+        name: 'caso.glance',
+        url: `https://raw.githubusercontent.com/maurferdev/dataset_res/${version}/EA904F-pos.glance`,
+      },
+    ],
+  },
 ];

@@ -126,7 +126,7 @@ module.exports = {
           to: path.join('itk', 'Pipelines'),
           to: '[name][ext]',
         },
-        { from: 'static/ParaView.png' },
+        { from: 'static/VizualSimuLab.png' },
       ]
     }),
     new GenerateSW({
